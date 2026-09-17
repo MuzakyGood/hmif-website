@@ -183,7 +183,7 @@ export default function HomePage() {
               <Cpu className="w-24 h-24" />
             </div>
             <div className="relative z-10">
-              <div className="text-4xl font-bold text-white mb-2">7</div>
+              <div className="text-4xl font-bold text-white mb-2">5</div>
               <div className="text-indigo-400 font-medium mb-2">Divisi Utama</div>
               <p className="text-sm text-slate-300">Pendidikan, R&D, Kominfo, dan Hubungan Masyarakat.</p>
             </div>
