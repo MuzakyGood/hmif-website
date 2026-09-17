@@ -13,7 +13,7 @@ const pengurus = [
   { name: "Afra Nur Rafifah", role: "Bendahara", category: "BPI", image: "https://ui-avatars.com/api/?name=Afra+Nur&background=1e1b4b&color=fff&size=500", bio: "Mengatur dan mengawasi sirkulasi keuangan HMIF.", techStack: ["Finance", "Excel"] },
   
   // Advisor
-  { name: "Fulan", role: "Advisor Divisi", category: "Advisor", image: "https://ui-avatars.com/api/?name=Fulan&background=0ea5e9&color=fff&size=500", bio: "Mengkoordinasi sinergi antar divisi.", techStack: ["Advisor", "Agile"] },
+  { name: "Farros Althaf", role: "Advisor Divisi", category: "Advisor", image: "https://ui-avatars.com/api/?name=Farros+Althaf&background=0ea5e9&color=fff&size=500", bio: "Mengkoordinasi sinergi antar divisi.", techStack: ["Advisor", "Agile"] },
 
   // Koordinator Divisi
   { name: "M. Guntur Ilham", role: "Koordinator Divisi", category: "Koordinator", image: "https://ui-avatars.com/api/?name=Guntur+Ilham&background=0ea5e9&color=fff&size=500", bio: "Mengkoordinasi sinergi antar divisi.", techStack: ["Coordination", "Agile"] },
