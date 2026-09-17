@@ -6,12 +6,15 @@ import { Users, Target, Rocket } from "lucide-react";
 
 const pengurus = [
   // Badan Pengurus Inti
-  { name: "Nizar", role: "Ketua Himpunan", category: "BPI", image: "https://ui-avatars.com/api/?name=Nizar&background=6366f1&color=fff&size=500", bio: "Memimpin dan mengayomi seluruh elemen himpunan.", techStack: ["Leadership", "Management"] },
-  { name: "Feby", role: "Wakil Ketua", category: "BPI", image: "https://ui-avatars.com/api/?name=Feby&background=4f46e5&color=fff&size=500", bio: "Mendampingi ketua dan memastikan roda organisasi berjalan.", techStack: ["Problem Solving"] },
+  { name: "Nizar Qashid", role: "Ketua Himpunan", category: "BPI", image: "https://ui-avatars.com/api/?name=Nizar+Qashid&background=6366f1&color=fff&size=500", bio: "Memimpin dan mengayomi seluruh elemen himpunan.", techStack: ["Leadership", "Management"] },
+  { name: "Feby Rizki Muharram", role: "Wakil Ketua", category: "BPI", image: "https://ui-avatars.com/api/?name=Feby&background=4f46e5&color=fff&size=500", bio: "Mendampingi ketua dan memastikan roda organisasi berjalan.", techStack: ["Problem Solving"] },
   { name: "Zulfa Naura", role: "Sekretaris 1", category: "BPI", image: "https://ui-avatars.com/api/?name=Zulfa+Naura&background=312e81&color=fff&size=500", bio: "Mengelola administrasi dan persuratan organisasi.", techStack: ["Administration", "Docs"] },
   { name: "Syifa Aisyah", role: "Sekretaris 2", category: "BPI", image: "https://ui-avatars.com/api/?name=Syifa+Aisyah&background=312e81&color=fff&size=500", bio: "Mengelola administrasi dan kearsipan himpunan.", techStack: ["Administration", "Notion"] },
   { name: "Afra Nur Rafifah", role: "Bendahara", category: "BPI", image: "https://ui-avatars.com/api/?name=Afra+Nur&background=1e1b4b&color=fff&size=500", bio: "Mengatur dan mengawasi sirkulasi keuangan HMIF.", techStack: ["Finance", "Excel"] },
   
+  // Advisor
+  { name: "Fulan", role: "Advisor Divisi", category: "Advisor", image: "https://ui-avatars.com/api/?name=Fulan&background=0ea5e9&color=fff&size=500", bio: "Mengkoordinasi sinergi antar divisi.", techStack: ["Advisor", "Agile"] },
+
   // Koordinator Divisi
   { name: "M. Guntur Ilham", role: "Koordinator Divisi", category: "Koordinator", image: "https://ui-avatars.com/api/?name=Guntur+Ilham&background=0ea5e9&color=fff&size=500", bio: "Mengkoordinasi sinergi antar divisi.", techStack: ["Coordination", "Agile"] },
   { name: "Azmi Rama", role: "Koordinator Divisi", category: "Koordinator", image: "https://ui-avatars.com/api/?name=Azmi+Rama&background=0284c7&color=fff&size=500", bio: "Memastikan program kerja tiap divisi berjalan lancar.", techStack: ["Monitoring", "Teamwork"] },
@@ -158,9 +161,9 @@ export default function AboutPage() {
             ))}
           </div>
 
-          {/* Level 4: Koordinator */}
-          <div className="w-full flex justify-center flex-wrap gap-8 md:gap-32 mb-12 relative z-10">
-            {pengurus.slice(5, 7).map((person, index) => (
+          {/* Level 4: Advisor */}
+          <div className="w-full flex justify-center flex-wrap gap-8 mb-12 relative z-10">
+            {pengurus.slice(5, 6).map((person, index) => (
               <motion.div
                 key={person.name}
                 initial={false}
@@ -174,15 +177,31 @@ export default function AboutPage() {
             ))}
           </div>
 
-          {/* Level 5: PIC Divisi */}
-          <div className="w-full flex justify-center flex-wrap gap-4 relative z-10">
-            {pengurus.slice(7).map((person, index) => (
+          {/* Level 5: Koordinator */}
+          <div className="w-full flex justify-center flex-wrap gap-8 md:gap-32 mb-12 relative z-10">
+            {pengurus.slice(6, 8).map((person, index) => (
               <motion.div
                 key={person.name}
                 initial={false}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 + (index * 0.1) }}
+                className="w-full sm:w-[280px]"
+              >
+                <FlipCard {...person} />
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Level 6: PIC Divisi */}
+          <div className="w-full flex justify-center flex-wrap gap-4 relative z-10">
+            {pengurus.slice(8).map((person, index) => (
+              <motion.div
+                key={person.name}
+                initial={false}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.4 + (index * 0.1) }}
                 className="w-full sm:w-[220px]"
               >
                 <FlipCard {...person} />

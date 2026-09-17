@@ -147,7 +147,7 @@ export default function HomePage() {
               onClick={() => setIsTerminalOpen(true)}
               className="flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3.5 glass hover:bg-white/5 text-white rounded-xl font-medium transition-colors"
             >
-              <Terminal className="w-4 h-4" /> Masuk Terminal
+              <Terminal className="w-4 h-4" /> Gabung Himpunan
             </button>
           </motion.div>
         </div>
@@ -166,7 +166,7 @@ export default function HomePage() {
               <Code2 className="w-24 h-24" />
             </div>
             <div className="relative z-10">
-              <div className="text-4xl font-bold text-white mb-2">1</div>
+              <div className="text-4xl font-bold text-white mb-2">3</div>
               <div className="text-brand-400 font-medium mb-2">Proyek Aktif</div>
               <p className="text-sm text-slate-300">Aplikasi web, mobile, hingga riset AI buatan mahasiswa.</p>
             </div>
@@ -185,7 +185,7 @@ export default function HomePage() {
             <div className="relative z-10">
               <div className="text-4xl font-bold text-white mb-2">5</div>
               <div className="text-indigo-400 font-medium mb-2">Divisi Utama</div>
-              <p className="text-sm text-slate-300">Pendidikan, R&D, Kominfo, dan Hubungan Masyarakat.</p>
+              <p className="text-sm text-slate-300">Hubungan Masyarakat / Humas, Media Kreatif / PDD, Riset & Teknologi, Keilmuan, Acara.</p>
             </div>
           </motion.div>
           
@@ -202,7 +202,7 @@ export default function HomePage() {
             <div className="relative z-10">
               <div className="text-4xl font-bold text-white mb-2">24/7</div>
               <div className="text-blue-400 font-medium mb-2">Sistem Publik</div>
-              <p className="text-sm text-slate-300">API Terbuka untuk digunakan sebagai bahan belajar.</p>
+              <p className="text-sm text-slate-300">Web ini digunakan sebagai sumber segala informasi terkait himpunan.</p>
             </div>
           </motion.div>
         </div>
